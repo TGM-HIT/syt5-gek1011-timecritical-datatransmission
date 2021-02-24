@@ -30,16 +30,15 @@ Verwenden Sie zur Implementierung eine konsolen-basierte Deployment-Umgebung zur
 Sollte für mehr als 60 ms kein HIGH Signal am Bus beobachtet werden, muss die Ampelsteuerung entsprechend neu gestartet werden. Dies kann entweder mit einem Watchdog geschehen, oder mit hoch-priorisierten Interrupts. Nach dem Neustart ist zuerst der Fehlerzustand zu starten (Gelb blinkend). Nur nach erfolgreicher Verbindung zum SPI-Bus soll die Ampel gestartet werden.
 
 ## Bewertung
-Gruppengrösse: 1/2 Person
+Gruppengrösse: 1-2 Person(en)
 ### GK Anforderungen **überwiegend erfüllt**
 - [ ] Beantwortung der Fragestellungen
-- [ ] Umsetzung der Ampelsteuerung und Ausgabe auf den SPI-Bus
-### GK Anforderungen **überwiegend erfüllt**
 - [ ] Verwendung von konsolenbasiertem Deployment
+### GK Anforderungen **zur Gänze erfüllt**
+- [ ] Umsetzung der Ampelsteuerung und Ausgabe auf den SPI-Bus
 - [ ] Ausführung und Dokumentation der Implementierung
 - [ ] Ausgabe der Information des SPI-Busses mittels eines Logic-Analyzers
-
-### EK Anforderungen **zur Gänze erfüllt**
+### EK Anforderungen **überwiegend erfüllt**
 - [ ] Ausgabe der Information des SPI-Busses über einen Single-Board-Computer
 ### EK Anforderungen **zur Gänze erfüllt**
 - [ ] Reset der Ampelsteuerung mittels Watchdog oder Interrupt-Implementierung
@@ -54,7 +53,7 @@ Gruppengrösse: 1/2 Person
 + Was sind Real-Time Operating-Systems (RTOS) und wie kann man diese auf Mikrokontrollern einsetzen?
 
 ### Classroom Git-Repository
-[Hier]() finden Sie das Abgabe-Repository zum Entwickeln und Commiten Ihrer Lösung. Sollte der Server durch einen unerwarteten Umstand daran gehindert worden sein, die an ihn gesendete Anfrage zu erfüllen, muss der Link zu Beginn des Labors persönlich beantragt werden!
+[Hier](https://github.com/500) finden Sie das Abgabe-Repository zum Entwickeln und Commiten Ihrer Lösung. Sollte der Server durch einen unerwarteten Umstand daran gehindert worden sein, die an ihn gesendete Anfrage zu erfüllen, muss der Link zu Beginn des Labors persönlich beantragt werden!
 
 ## Quellen
 * [Ampelkunde](https://www.wien.gv.at/verkehr/ampeln/ampelkunde.html)
@@ -63,3 +62,5 @@ Gruppengrösse: 1/2 Person
 * [Logic Analyzer](https://www.saleae.com/de/downloads/)
 * [Independent watchdog timer](https://stm32f4-discovery.net/2014/07/library-20-independent-watchdog-timer-on-stm32f4xx/)
 
+---
+**Version** *20210217v2*
